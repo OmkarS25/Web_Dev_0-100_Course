@@ -1,0 +1,59 @@
+<html>
+    <head>
+        <title>Zerodha With CSS</title>
+    </head>
+    <body>
+        <!-- Comment:
+            <div style="margin-left: 200px; margin-right: 200px; 
+            margin-top: 25px; margin-bottom: 25px; ">
+                <img width="150" src="logo.svg"></img>
+                <span style="float: right;">Support</span>
+                <span style="float: right;">Pricing</span>
+                <span style="float: right;">Products</span>
+                <span style="float: right;">About</span>
+                <span style="float: right;">Singup</span>
+            </div> 
+            Imature way to do thing, in modern css we use flex box this where we can 
+            put div next to each others.
+        -->
+        <div style="display:flex; justify-content: space-between; padding-left: 200px; 
+        padding-right: 200px; padding-top: 20px; padding-bottom: 20px; 
+        box-shadow: 0px 1px 0px rgb(218, 218, 218);">
+            <div style="display: flex; justify-content: right; cursor: pointer;">
+                <a href="D:\Codes\Web Dev\Web_Dev_0-100_Course\WEEK 0\Zerodha Landing Page\withcss.html">
+                    <img height="20px" width="150" src="logo.svg"></img>
+                </a>
+            </div>
+            <div style="display: flex; justify-content: space-between; font-family: Arial, Helvetica, sans-serif;">
+                <div style="margin-left: 25px; margin-right: 25px; cursor: pointer;">Singup</div>
+                <div style="margin-left: 25px; margin-right: 25px; cursor: pointer;">About</div>
+                <div style="margin-left: 25px; margin-right: 25px; cursor: pointer;">Products</div>
+                <div style="margin-left: 25px; margin-right: 25px; cursor: pointer;">Pricing</div>
+                <div style="margin-left: 25px; margin-right: 25px; cursor: pointer;">Support</div>
+            </div>
+        </div>
+        <br><br><br><br>
+        <center>
+            <div style="font-family: Arial, Helvetica, sans-serif;">
+                <img width="820" src="landing.png" alt="Zerodha" />
+                <br><br><br><br>
+                <div style="font-size: 44px; padding-bottom: 15px;">
+                    Invest in everything
+                </div>
+                <div style="font-size: 20px;">
+                    Online platform to invest in stocks, derivatives, mutual funds, ETFs, 
+                    bonds, and more.
+                </div>
+                <br><br>
+                <button style="height: 40px; width: 200px; background-color: #387ed1; 
+                border: none; border-radius: 3px; cursor: pointer;  transition-duration: 0.4s;" 
+                onmouseover="this.style.backgroundColor='black'; this.style.color='white';" 
+                onmouseout="this.style.backgroundColor='#387ed1'; this.style.color='white';">
+                    <div style="color: white; font-size: 20px;">
+                        Sign up for free
+                    </div>
+                </button>
+            </div>
+        </center>
+    </body>
+</html>
