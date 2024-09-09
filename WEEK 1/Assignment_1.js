@@ -3,7 +3,7 @@
 // 1. Create a counter in JS (counts from 30-0)
 function counter(){
     for(let i=30; i>=0; i--){
-        console.log(i);
+        process.stdout.write(i + " ");
     }
 }
 
@@ -21,12 +21,12 @@ function setDiffrence(){
 function terminalClock(){
     setInterval(() => {
         let date = new Date();
-        console.log(date.getHours() + ":" + date.getMinutes() + ":" + date.getSeconds());
+        console.log(date.getHours() + ":" + date.getMinutes() + ":" + date.getSeconds() + ":" + date.getMilliseconds());
     })
 }
 
 function main(){
     counter();
     setDiffrence();
-    terminalClock();
+    // terminalClock();
 } main();
