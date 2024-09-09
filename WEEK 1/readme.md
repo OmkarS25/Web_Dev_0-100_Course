@@ -1,4 +1,4 @@
-# In this week we are going to learn about 
+# In this week we are going to learn about
 
 1. Why languages?
 
