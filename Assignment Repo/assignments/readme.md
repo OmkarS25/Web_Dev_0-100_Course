@@ -1,0 +1,1 @@
+## To solve the test type this in command line: npx jest ./test/[filename]
