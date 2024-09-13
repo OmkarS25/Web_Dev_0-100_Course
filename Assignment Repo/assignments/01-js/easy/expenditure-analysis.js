@@ -14,7 +14,22 @@
 */
 
 function calculateTotalSpentByCategory(transactions) {
-  return [];
+  // if catergroies are unique
+  // then we calculate the total spent by each category
+  // and return the result
+  let categories = {};
+  transactions.forEach(transaction => {
+    if(categories[transaction.category]) {
+      categories[transaction.category] += transaction.price;
+    } else {
+      categories[transaction.category] = transaction.price;
+    }
+  });
+  let result = [];
+  for(let category in categories) {
+    result.push({category, totalSpent: categories[category]});
+  }
+  return result;
 }
 
 module.exports = calculateTotalSpentByCategory;
